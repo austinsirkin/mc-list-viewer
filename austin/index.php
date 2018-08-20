@@ -32,11 +32,11 @@ body {
 <form action="
 
 <?php 
-echo htmlspecialchars("/austin/lists.php"); 
+echo htmlspecialchars('/austin/lists.php'); 
 ?>
 
 " method="post">
-<center><input type="text" size=60" name="apikey"></center>
+<center><input type="text" size="60" name="apikey"></center>
 <br>
 <center><input type="submit"></center>
 </form>
