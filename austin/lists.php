@@ -19,7 +19,8 @@ body {
 <?php
 include '/classes/error.php';
 
-// Below, I have a few cases meant to prevent things from going wrong. Either a missing POST, a mission SESSION, or // both. Basically, fix it if it's fixable, or break it in a way that it gives an error.
+// Below, I have a few cases meant to prevent things from going wrong. Either a missing POST, a mission SESSION, or 
+// both. Basically, fix it if it's fixable, or break it in a way that it gives an error.
 
 if ((isset($_SESSION["api"]) == false) && (isset($_POST["apikey"]) == false)) {
 $_SESSION["api"] = "broken";
