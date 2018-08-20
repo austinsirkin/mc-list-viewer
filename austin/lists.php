@@ -65,7 +65,7 @@ $json = json_decode($result, 1);
 if ($result == false) {
 
 $errorShrug = new Error();
-$errorShrug->firstLine = "Either your API key is invalid, or the MailChimp servers are down. It's probably your API key.";
+$errorShrug->firstLine = "Invalid API Key.";
 echo $errorShrug->displayError();
 
 } elseif(isset($json["title"]) == true) {
