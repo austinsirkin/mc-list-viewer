@@ -1,7 +1,5 @@
 <?php
-
 // Destroying any existing session will allow the user to start over fresh each time they hit index.
-
 session_start();
 session_unset();
 session_destroy();
@@ -15,12 +13,12 @@ session_destroy();
 body {
     font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;  
     font-weight: 400;
-}
+    }
 
 </style>
 </head>
-<body>
 
+<body>
 <table style="width: 40%"><tr><td align="right"><a href="http://www.mailchimp.com">visit mailchimp</a></td></tr></table>
 
 <!-- Using a table for the form, as I just thought it looked nice, and it was quick -->
@@ -31,7 +29,13 @@ body {
 
 <!-- Including a form action using the htmlspecialchars to prevent scripting exploits in the URL. A cool trick I saw on the internet! -->
 
-<form action="<?php echo htmlspecialchars("/austin/lists.php") ?>" method="post">
+<form action="
+
+<?php 
+echo htmlspecialchars("/austin/lists.php"); 
+?>
+
+" method="post">
 <center><input type="text" size=60" name="apikey"></center>
 <br>
 <center><input type="submit"></center>
@@ -39,5 +43,9 @@ body {
 </td></tr>
 </table>
 </body>
- <?php include 'footer.php'; ?>
+
+<?php
+include 'footer.php'; 
+?>
+
 </html>
