@@ -8,7 +8,7 @@ To run this app on your own machine, you'll need to ensure that you're running P
 
 ### Installing
 
-To install, just copy the file structure to your server, but make sure your directory for the files are /austin.
+To install, just copy the file structure to your server, but make sure your base directory for the files is /austin.
 
 ## Built With
 
@@ -24,7 +24,7 @@ No contributing is allowed at this time.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
